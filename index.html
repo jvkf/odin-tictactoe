@@ -10,6 +10,54 @@
 </head>
 
 <body>
+  <h1>Tic-Tac-Toe</h1>
+  <section class="modal hidden" id="modal">
+    <div id="message" class="message"></div>
+  </section>
+  <div id="overlay" class="overlay hidden"></div>
+  <div class="container">
+    <div class="game-container hidden">
+      <div class="game-row">
+        <div class="game-cell" data-row="0" data-cell="0"></div>
+        <div class="game-cell" data-row="0" data-cell="1"></div>
+        <div class="game-cell" data-row="0" data-cell="2"></div>
+      </div>
+      <div class="game-row">
+        <div class="game-cell" data-row="1" data-cell="0"></div>
+        <div class="game-cell" data-row="1" data-cell="1"></div>
+        <div class="game-cell" data-row="1" data-cell="2"></div>
+      </div>
+      <div class="game-row">
+        <div class="game-cell" data-row="2" data-cell="0"></div>
+        <div class="game-cell" data-row="2" data-cell="1"></div>
+        <div class="game-cell" data-row="2" data-cell="2"></div>
+      </div>
+      <button type="button" id="resetButton" class="button">Reset Game</button>
+    </div>
+    <div class="input-container">
+      <h2>Setup</h2>
+      <form id="setupForm">
+        <div class="form-grid">
+          <fieldset>
+            <h4>Player 1</h4>
+            <label for="playerName1">Name:</label>
+            <input type="text" id="playerName1" name="playerName1" required><br><br>
+            <label for="playerColor1">Color:</label>
+            <input type="color" id="playerColor1" name="playerColor1" value="#ff0000"><br><br>
+          </fieldset>
+          <fieldset>
+            <h4>Player 2</h4>
+            <label for="playerName2">Name:</label>
+            <input type="text" id="playerName2" name="playerName2" required><br><br>
+            <label for="playerColor2">Color:</label>
+            <input type="color" id="playerColor2" name="playerColor2" value="#0000ff"><br><br>
+          </fieldset>
+        </div>
+        <input type="submit" value="Start Game" class="button">
+      </form>
+    </div>
+  </div>
+
 
 
 </body>
